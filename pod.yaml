@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+
+metadata:
+  name: my-app
+  labels: 
+
+spec:
+  containers:
+    - name: my-container
+      image: fatmaahmed611/nginx-web
+      imagePullPolicy: IfNotPresent
+      ports:
+        - containerPort: 80
